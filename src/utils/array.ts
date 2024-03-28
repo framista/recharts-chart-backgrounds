@@ -1,0 +1,1 @@
+export const createNElementsArray = (n: number) => [...Array(n).keys()];
