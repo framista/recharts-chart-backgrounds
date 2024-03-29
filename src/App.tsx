@@ -1,10 +1,10 @@
 import { Chart } from "./chart";
-import { chartData, chartSeries } from "./chart/data";
+import { backgroundData, backgroundSeries, chartData, chartSeries } from "./chart/data";
 
 function App() {
   return (
     <div className="container">
-      <Chart chartData={chartData} chartSeries={chartSeries} />
+      <Chart {...{chartData, chartSeries, backgroundSeries, backgroundData}} />
     </div>
   );
 }
