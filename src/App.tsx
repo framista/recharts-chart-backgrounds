@@ -4,7 +4,7 @@ import { backgroundData, backgroundSeries, chartData, chartSeries } from "./char
 import { Form } from "./form";
 
 function App() {
-  const [choosenBackgrounds, setChoosenBackgrounds] = useState<Array<keyof typeof backgroundSeries>>([]);
+  const [choosenBackgrounds, setChoosenBackgrounds] = useState<Array<keyof typeof backgroundSeries>>(['background1', 'background2', 'background3']);
   const releveantBackgroundSeries = choosenBackgrounds.reduce((p, s) => 
     ({...p, [s]: backgroundSeries[s] })
   , {})
